@@ -1,0 +1,146 @@
+.offers {
+  margin-top: 167px;
+  margin-bottom: 131px;
+}
+.offers__title {
+  margin-bottom: 50px;
+}
+.offers__list {
+  display: flex;
+  justify-content: space-between;
+  @include tablets {
+    text-align: center;
+  }
+  
+}
+.offer-item {
+  width: calc(100% / 3 - 18px);
+}
+.offer {
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+  background-color: #fff;
+  position: relative;
+  overflow: hidden;
+  padding-top: 183px;
+  @include tablets {
+    margin: 0 auto;
+    max-width: 310px;
+    width: 100%;
+  }
+}
+
+.offer:after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background-color: rgb(165, 165, 164);
+  width: 285px;
+  height: 285px;
+  top: -135px;
+  left: 168px;
+  z-index: 0;
+}
+.offer-item_theme_blue::after {
+  background-color: #556180;
+}
+.offer-item_theme_gold::after {
+  background-color: #978455;
+}
+.offer-item__header {
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 46px;
+}
+.offer-item__content {
+  padding: 0 46px 0 27px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.offer-item__title {
+  color: #010001;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 700;
+  @include phones {
+    font-size: 22px;
+  }
+}
+.offer-item__text {
+  display: flex;
+  justify-content: space-between;
+  @include laptops {
+    flex-direction: column;
+  }
+  @include tablets {
+    flex-direction: row;
+  }
+}
+.offer__cell {
+  margin-right: 30px;
+}
+.offer__cell:last-child {
+  margin-right: 0;
+}
+.offer__cell span {
+  font-size: 36px;
+  color: #010001;
+  display: block;
+  @include laptops{
+    font-size: 28px;
+  }
+}
+.offer__cell p {
+  color: #333333;
+}
+.offer-item__click {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+  margin-bottom: 36px;
+}
+.offer-arrow {
+  cursor: pointer;
+  display: none;
+  opacity: 0.8;
+  position: absolute;
+  top: 50%;
+  &_next {
+    right: 100px;
+  }
+  &_prev {
+    left: 100px;
+  }
+  @include tablets {
+    display: block;
+  }
+  @include phones {
+    opacity: 0;
+  }
+}
+.slick-dots {
+  display: flex;
+  position: absolute;
+  left: 38%;
+}
+.slick-dots li button {
+  font-size: 0;
+  height: 8px;
+  width: 8px;
+  border-radius: 100%;
+  cursor: pointer;
+  background-color: #ddd;
+  outline: none;
+}
+.slick-dots li.slick-active button{
+  transition: background-color 0.6s ease;
+  background-color: rgb(163, 163, 163);
+}
+.slick-dots li button:before {
+  font-size: 0;
+  display: none;
+}

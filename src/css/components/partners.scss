@@ -1,0 +1,54 @@
+.partners {
+  background-color: #f4f5f5;
+}
+.partners__container {
+  padding: 100px 0 49px;
+  @include tablets {
+    padding: 65px 0 30px;
+  }
+}
+.partners__title {
+  color: #202123;
+  margin-bottom: 68px;
+  @include tablets {
+    margin-bottom: 23px;
+  }
+}
+.partners-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  li {
+    @include phones {
+      width: 50%;
+    }
+  }
+}
+.partners__link {
+  display: flex;
+  flex: 1;
+  max-width: 300px;
+  min-width: 150px;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 33px;
+  margin-right: 33px;
+  filter: grayscale(100%);
+  @include tablets {
+    margin-bottom: 20px;
+    margin-right: 20px;
+    height: 88px;
+  }
+  img {
+    @include tablets {
+      max-width: 75%;
+    }
+  }
+}
+.partners__link:nth-child(4n) {
+  margin-right: 0;
+}
+.partners__link:hover {
+  filter: grayscale(0);
+}

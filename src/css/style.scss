@@ -1,0 +1,13 @@
+$laptops: 1120px;
+$tablets: 769px;
+$phones: 481px;
+
+@import "media";
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+@import "global.scss";
+@import "components/*.scss";
+
+
+
+

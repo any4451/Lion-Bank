@@ -1,0 +1,27 @@
+
+.hero__container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 578px;
+  @include phones {
+    min-height: 500px;
+  }
+}
+.hero__text {
+    width: 38%;
+    @include tablets {
+      width: 55%;
+    }
+    @include phones {
+      width: 95%;
+    }
+}
+.hero__title {
+  margin-bottom: 24px;
+}
+.hero__subtext {
+  color: #dfb56d;
+  font-size: 18px;
+  margin-bottom: 42px;
+}

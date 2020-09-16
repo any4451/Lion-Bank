@@ -1,0 +1,149 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  font-family: "Open Sans", "Helvetica", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.42;
+  background-color: #29292c;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  &.overflow {
+    overflow: hidden;
+  }
+  @include phones {
+    font-size: 4vmin;
+  }
+}
+ul,
+p {
+  margin: 0;
+  padding: 0;
+  @include phones {
+    font-size: 16px;
+  }
+}
+ul li {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+}
+a {
+  color: inherit;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+h1 {
+  font-size: 72px;
+  line-height: 1;
+  @include tablets {
+    font-size: 48px;
+  }
+  @include phones {
+    font-size: 42px;
+  }
+}
+h2 {
+  font-size: 48px;
+  line-height: 1.2;
+  @include tablets {
+    font-size: 40px;
+  }
+  @include phones {
+    font-size: 38px;
+  }
+}
+h3 {
+  font-size: 36px;
+  @include tablets {
+    font-size: 33px;
+  }
+  @include phones {
+    font-size: 30px;
+  }
+}
+h4 {
+  font-size: 30px;
+  @include tablets {
+    font-size: 25px;
+  }
+  @include phones {
+    font-size: 22px;
+  }
+}
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  position: relative;
+}
+.container {
+  width: 95%;
+  max-width: 1140px;
+  margin: 0 auto;
+  position: relative;
+}
+.wrapper_main-page {
+  background: url(./img/bg/lion-header.jpg) center top no-repeat,
+    url(./img/bg/bottom-pic.png) right bottom 150px no-repeat;
+    @include phones {
+      background: url(./img/bg/lion-header.jpg) center top no-repeat;
+    }
+}
+.top-line__container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.top-line {
+  padding-bottom: 25px;
+  min-height: 415px;
+  display: flex;
+  flex-direction: column;
+  background: #202123 url(./img/bg/lion-head-wide.jpg) right 20% top no-repeat;
+  @include tablets {
+    background-position-x: 57%;
+  }
+}
+.top-line__title {
+  margin-bottom: 47px;
+}
+.page-content {
+  background: #fff;
+  color: #818181;
+  padding: 40px 0 110px;
+  @include phones {
+    padding: 40px 0 80px;
+  }
+}

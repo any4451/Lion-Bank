@@ -1,0 +1,43 @@
+.info {
+  margin-bottom: 120px;
+  @include phones {
+    margin-bottom: 50px;
+  }
+}
+
+.info__box:before {
+  content: "";
+  display: block;
+  background: url(./img/decor/chess.jpg) center center / cover no-repeat;
+  border-radius: 4px;
+  width: 488px;
+  height: 503px;
+  @include phones {
+    display: none;
+  }
+}
+.info__content {
+  background: #202123;
+  border-radius: 4px;
+  padding: 69px 90px;
+  width: 68%;
+  margin-left: 364px;
+  margin-top: -399px;
+  @include laptops {
+    margin-top: -263px;
+    margin-left: 26px;
+    width: 95%;
+    padding: 50px 80px;
+  }
+  @include phones {
+    margin: 0 auto;
+    width: 95%;
+    padding: 40px 30px;
+    text-align: center;
+  }
+}
+.info__text {
+  margin-top: 27px;
+  margin-bottom: 40px;
+  line-height: 1.688;
+}

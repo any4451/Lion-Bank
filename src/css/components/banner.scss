@@ -1,0 +1,30 @@
+.banner {
+    background: #e5c288 url(./img/decor/phone-n-hand.png) top 10px right 30% no-repeat;
+    min-height: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @include tablets {
+        background-position-x: 130%;
+    }
+    @include phones {
+        flex-direction: row;
+        text-align: center;
+        min-height: 500px;
+        background: #e5c288 url(./img/decor/phone-n-hand.png) top 187px right -65px no-repeat;
+    }
+}
+.banner__content {
+    width: 39%;
+    color: #202123;
+    @include tablets {
+        width: 50%;
+        .banner__title {
+            font-size: 37px;
+        }
+    }
+    @include phones {
+        width: 100%;
+        margin-top: 15px;
+    }
+}

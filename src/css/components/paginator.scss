@@ -1,0 +1,42 @@
+.paginator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .paginator__display {
+    margin-right: 22px;
+    @include phones {
+      display: none;
+    }
+  }
+  .paginator__item {
+    text-align: center;
+    display: inline-block;
+  }
+  .paginator__link {
+    display: block;
+    font-weight: 700;
+    border-radius: 100%;
+    width: 32px;
+    height: 32px;
+    text-decoration: none;
+    position: relative;
+    line-height: 32px;
+  } 
+  .paginator__item_active .paginator__link {
+   background-color: #353538;
+  }
+  .paginator .paginator__link:hover {
+    background-color: #353538;
+  }
+  .paginator_theme_light {
+    color: #202123;
+  }
+  .paginator_theme_light .paginator__item_active .paginator__link {
+    color: #fff;
+  }
+  .paginator_theme_light .paginator__link:hover {
+    color: #fff;
+    background:  #353538;
+  }
