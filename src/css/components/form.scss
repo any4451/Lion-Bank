@@ -12,6 +12,10 @@
 .form__row {
     display: flex;
     margin-bottom: 30px;
+    @include phones {
+        display: block;
+        margin-bottom: 0px;
+    }
 }
 .form__input {
     flex: 1;
@@ -23,6 +27,11 @@
     outline: none;
     border-radius: 4px;
     border: 1px solid transparent;
+    @include phones {
+        margin-right: 0;
+        width: 100%;
+        margin-bottom: 20px;
+    }
 }
 .form__input:last-child {
     margin-right: 0;
@@ -40,6 +49,10 @@
 .form__controls {
     display: flex;
     margin-bottom: 30px;
+    @include phones {
+        display: block;
+
+    }
 }
 .controls {
     flex: 1;
@@ -49,12 +62,21 @@
 .controls__item {
     margin-bottom: 10px;
     margin-right: 10px;
+    @include phones {
+        margin-right: 6px;
+    }
 }
 .form__controls-title {
     color: #202123;
     font-size: 18px;
     width: 34%;
     margin-left: 30px;
+    @include phones {
+        margin-left: 0;
+        width: 100%;
+        margin-bottom: 15px;
+        text-align: center;
+    }
 }
 .controls__checkbox {
     display: none;
@@ -68,6 +90,9 @@
 .form__btns {
     display: flex;
     justify-content: flex-end;
+    @include phones {
+        justify-content: center;
+    }
 }
 .form__btn {
     margin-right: 20px;
