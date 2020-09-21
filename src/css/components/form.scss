@@ -1,6 +1,9 @@
 .form {
     background: #f4f5f5;
     padding: 115px 0 79px;
+    @include phones {
+        padding: 75px 0 40px;
+    }
 }
 .form__box {
     color: #202123;
@@ -96,6 +99,9 @@
 }
 .form__btn {
     margin-right: 20px;
+    @include phones {
+        margin-right: 10px;
+    }
 }
 .form__btn:last-child {
     margin-right: 0;

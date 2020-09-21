@@ -10,6 +10,9 @@
     min-width: 165px;
     border-radius: 4px;
     outline: transparent;
+    @include phones {   
+      min-width: 148px;
+    }
   }
   .btn_color_orange {
     background-color: #dfb56d;
